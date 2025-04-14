@@ -1,14 +1,9 @@
 /**
- * [Your function description here]
- * [Your parameters description here]
- * Example:
- * @param {string} str1
- *
- * [What the function returns]
- * Example:
- * @returns {boolean}
+ * Returns a tuple of indices whose elements sum to the given target.
+ * @param {number[]} numbers - An array of integers.
+ * @param {number} target - The target sum to find.
+ * @returns {[number, number]} - A tuple of indices whose values sum to target.
  */
-export function myFunction(s1, s2) {
-  // TODO: implement
-  return false;
+export function pairSum(numbers, target) {
+  // Your code here
 }

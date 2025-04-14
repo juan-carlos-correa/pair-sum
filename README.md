@@ -1,59 +1,45 @@
-> 📄 **New here?** 👉 [See how to use this template →](./TEMPLATE-INSTRUCTIONS.md)
+# 🧠 Pair Sum
 
-# 🧠 [EXERCISE TITLE HERE]
-
-_A quick one-liner describing the problem._  
-_Example: Check if two strings are anagrams._
+_Find the indices of two unique elements in an array that sum up to a target._
 
 ## ✍️ Your Task
 
-Your goal is to solve the coding challenge using a clear and efficient solution.
-
-1. Read the problem and input/output requirements
-2. Implement your solution in `src/main.mjs`
-3. Run tests with `npm run test` to validate your solution
+1. Read the problem and requirements carefully
+2. Write your implementation in `src/main.mjs`
+3. Test your solution with `npm run test`
 
 ## 📘 Description
 
-Describe the problem in detail.
+You are given an array of numbers and a target sum.  
+Your task is to return a tuple containing two **unique indices** whose corresponding elements sum to the given target.
 
-Example:
+You must return **the indices**, not the elements.
 
-Given two strings `s1` and `s2`, return `true` if `s2` is an anagram of `s1`, and `false` otherwise.
-
-An anagram is a word or phrase formed by rearranging the letters of a different word.
+There is **exactly one pair** that adds up to the target.
 
 ## 📥 Input
 
-- `s1`: a string (1 ≤ s1.length ≤ 10⁵)
-- `s2`: a string (1 ≤ s2.length ≤ 10⁵)
-- No spaces, only lowercase letters
+- `numbers`: an array of integers (`2 <= numbers.length <= 10⁵`)
+- `target`: an integer representing the target sum
 
 ## 📤 Output
 
-- Returns `true` or `false`
+- Returns a tuple/array of two indices `[i, j]` such that `numbers[i] + numbers[j] === target` and `i !== j`
 
 ## 🛠️ Instructions
 
-1. Open the file `src/main.mjs` and implement the solution.
-2. To verify your solution, run the tests in `src/main.test.js` using:
+1. Open the file `src/main.mjs` and implement the `pair_sum` function.
+2. To verify your solution, run the tests in `test/main.test.js` using:
 
 ```bash
 npm run test
 ```
 
-> ✅ Do not modify the test file unless you’re adding extra edge cases.
+✅ Do not modify the test file unless you're adding extra edge cases.
 
 ## 💡 Tips
 
-_You can add any tips or hints that might help the user solve the problem._
-
-For example:
-
-- Use `.toLowerCase()` if needed
-- Use objects, arrays or `Map` to count character frequencies
-- Aim for O(n) time complexity if possible
-- Compare frequency maps or use one-pass counter
+- Try to solve it in **O(n)** time complexity using a single pass.
 
 ## 🧪 Run Tests
 
@@ -64,6 +50,4 @@ npm install
 npm run test
 ```
 
-✅ Make sure your implementation is in `src/main.mjs` and your tests in `src/main.test.js`.
-
-Happy coding! 🚀
+✅ Make sure your implementation is in `src/main.mjs` and your tests in `test/main.test.js`.
